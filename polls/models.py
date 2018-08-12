@@ -3,7 +3,6 @@
 @since 2018-08-12
 '''
 
-
 import datetime
 from django.db import models
 from django.utils import timezone

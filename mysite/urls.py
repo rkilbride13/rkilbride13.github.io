@@ -1,3 +1,8 @@
+'''
+@author Ryan Kilbride
+@since 2018-08-12
+'''
+
 """mysite URL Configuration
 
 The `urlpatterns` list routes URLs to views. For more information please see:
