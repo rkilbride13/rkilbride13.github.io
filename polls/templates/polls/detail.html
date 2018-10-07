@@ -1,6 +1,9 @@
 <h1>Question {{question.id}}: {{ question.strQuestionText }}</h1>
-<ul>
+<form action="{% url 'polls:vote' question.id %}" method="post">
+{% csrf_token %}<!--USE THIS WITH EvERY POST OR FORM-->
 {% for choice in question.choice_set.all %}
-    <li>{{ choice.strChoiceText }}</li>
+<input type="radio" name="choice" id="choice{{ forloop.counter }}" value="{{ choice.id }}">
+<label for="choice{{ forloop.counter }}">{{ choice.strChoiceText }}</label><br>
 {% endfor %}
-</ul>
+<input type="submit" value="Vote">
+</form>

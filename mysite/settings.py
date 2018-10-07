@@ -30,6 +30,8 @@ DEBUG = True
 
 ALLOWED_HOSTS = [
     'localhost',
+    '127.0.0.1',
+    '192.168.50.25/29',
 ]
 
 
@@ -83,7 +85,7 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME':  'selfstat.io',
-        'HOST': 'localhost',
+        'HOST': 'RKilbr-04',
         'PORT': '5432',
         'USER': 'ssAdmin',
         'PASSWORD': 'Password1234',
